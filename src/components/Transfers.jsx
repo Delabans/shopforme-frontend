@@ -50,7 +50,7 @@ export default function Transfers() {
           );
         })}
       </div>
-      <a className="view" href="#">
+      <a className="view" href="/Riderprofile">
         View all <HiArrowNarrowRight />
       </a>
     </Section>
