@@ -1,0 +1,52 @@
+/* Signin */
+.signin {
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+  border: 1px solid blue;
+}
+.signin-form {
+  height: 40vh;
+  width: 32vw;
+  box-shadow: 1px 1px 5px gray;
+  margin: 24vh 0 0 34vw;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  background-color: white;
+}
+.signin-form > input {
+  height: 3rem;
+  width: 27vw;
+  border: none;
+  border-bottom: 2px solid dimgrey;
+  font-size: 16px;
+  outline: none;
+  margin: 5px 0 10px 0;
+}
+.signin-form > input:focus {
+  border-bottom: 3px solid blue;
+}
+.signin-form > button {
+  height: 2.3rem;
+  width: 10vw;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 15px 0 0 8vw;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: blue;
+}
+
+.signin-form > button:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
