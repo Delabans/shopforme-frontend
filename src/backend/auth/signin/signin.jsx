@@ -35,7 +35,7 @@ const Signin = () => {
       method: "POST",
       body: { ...state },
     });
-    // localStorage.setItem("token", user.token);
+    localStorage.setItem("token", user.token);
     setUser({ user });
     navigate("/");
   };
