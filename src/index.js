@@ -13,7 +13,7 @@ import List from "./list/List";
 import Rating from "./rating/rating";
 import Riderprofile from "./components/Riderprofile";
 import ProtectedRoute from "./backend/routes/ProtectedRoute";
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
