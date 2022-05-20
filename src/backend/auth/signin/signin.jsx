@@ -37,7 +37,7 @@ const Signin = () => {
     });
     localStorage.setItem("token", user.token);
     setUser({ user });
-    navigate("/");
+    navigate("/Dashboard");
   };
 
   return (

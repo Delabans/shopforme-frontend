@@ -83,19 +83,19 @@ export default function Sidebar() {
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                <link to="/Riderprofile">
+                <Link to="/Riderprofile">
                   <RiDashboard2Fill />
                   <span> Riders Profile</span>
-                </link>
+                </Link>
               </li>
               <li
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
-                <link to="/">
+                <Link to="/">
                   <FaAddressCard />
                   <span> Payment Details</span>
-                </link>
+                </Link>
               </li>
               <li
                 className={currentLink === 4 ? "active" : "none"}
@@ -110,30 +110,30 @@ export default function Sidebar() {
                 className={currentLink === 5 ? "active" : "none"}
                 onClick={() => setCurrentLink(5)}
               >
-                <link to="/">
+                <Link to="/">
                   <BsFillChatTextFill />
                   <span> FAQs</span>
-                </link>
+                </Link>
               </li>
               <li
                 className={currentLink === 6 ? "active" : "none"}
                 onClick={() => setCurrentLink(6)}
               >
-                <link to="/">
+                <Link to="/">
                   <IoSettings />
                   <span> Settings</span>
-                </link>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="logout">
-          <link to="/login">
+          <Link to="/login">
             <FiLogOut />
             <span className="logout" onClick={() => logout()}>
               Logout
             </span>
-          </link>
+          </Link>
         </div>
       </Section>
       <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
@@ -143,55 +143,55 @@ export default function Sidebar() {
               className={currentLink === 1 ? "active" : "none"}
               onClick={() => setCurrentLink(1)}
             >
-              <link to="/">
+              <Link to="/">
                 <MdSpaceDashboard />
                 <span> Dashboard</span>
-              </link>
+              </Link>
             </li>
             <li
               className={currentLink === 2 ? "active" : "none"}
               onClick={() => setCurrentLink(2)}
             >
-              <link to="/">
+              <Link to="/">
                 <RiDashboard2Fill />
                 <span> Riders</span>
-              </link>
+              </Link>
             </li>
             <li
               className={currentLink === 3 ? "active" : "none"}
               onClick={() => setCurrentLink(3)}
             >
-              <link to="/">
+              <Link to="/">
                 <FaAddressCard />
                 <span> Payment Details</span>
-              </link>
+              </Link>
             </li>
             <li
               className={currentLink === 4 ? "active" : "none"}
               onClick={() => setCurrentLink(4)}
             >
-              <link to="/">
+              <Link to="/">
                 <GiTwirlCenter />
                 <span> Learning Center</span>
-              </link>
+              </Link>
             </li>
             <li
               className={currentLink === 5 ? "active" : "none"}
               onClick={() => setCurrentLink(5)}
             >
-              <link to="/">
+              <Link to="/">
                 <BsFillChatTextFill />
                 <span> FAQs</span>
-              </link>
+              </Link>
             </li>
             <li
               className={currentLink === 6 ? "active" : "none"}
               onClick={() => setCurrentLink(6)}
             >
-              <link to="/">
+              <Link to="/">
                 <IoSettings />
                 <span> Settings</span>
-              </link>
+              </Link>
             </li>
           </ul>
         </div>

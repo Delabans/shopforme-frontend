@@ -8,6 +8,7 @@ import Profile from "./Profile";
 import Transfers from "./Transfers";
 import scrollreveal from "scrollreveal";
 import Rating from "../rating/rating"
+import Sidebar from "./Sidebar";
 export default function Dashboard() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -30,11 +31,14 @@ export default function Dashboard() {
   }, []);
   return (
     <Section>
+      <Sidebar/>
       <Navbar />
       <div className="grid">
         <div className="row__one">
           <Analytics />
           <FAQ />
+          
+          
         </div>
         <div className="row__two">
           <Earnings />
@@ -42,7 +46,7 @@ export default function Dashboard() {
           <Profile />
           <Profile />
           <Rating />
-         
+        
         </div>
       </div>
     </Section>
