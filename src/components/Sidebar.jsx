@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { MdSpaceDashboard } from "react-icons/md";
 import { RiDashboard2Fill } from "react-icons/ri";
@@ -73,66 +74,66 @@ export default function Sidebar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                <a href="/">
+                <Link to="/">
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
-                </a>
+                </Link>
               </li>
               <li
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                <a href="/Riderprofile">
+                <link to="/Riderprofile">
                   <RiDashboard2Fill />
                   <span> Riders Profile</span>
-                </a>
+                </link>
               </li>
               <li
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
-                <a href="/">
+                <link to="/">
                   <FaAddressCard />
                   <span> Payment Details</span>
-                </a>
+                </link>
               </li>
               <li
                 className={currentLink === 4 ? "active" : "none"}
                 onClick={() => setCurrentLink(4)}
               >
-                <a href="/list">
+                <Link to="/list">
                   <GiTwirlCenter />
                   <span>List Items</span>
-                </a>
+                </Link>
               </li>
               <li
                 className={currentLink === 5 ? "active" : "none"}
                 onClick={() => setCurrentLink(5)}
               >
-                <a href="/">
+                <link to="/">
                   <BsFillChatTextFill />
                   <span> FAQs</span>
-                </a>
+                </link>
               </li>
               <li
                 className={currentLink === 6 ? "active" : "none"}
                 onClick={() => setCurrentLink(6)}
               >
-                <a href="/">
+                <link to="/">
                   <IoSettings />
                   <span> Settings</span>
-                </a>
+                </link>
               </li>
             </ul>
           </div>
         </div>
         <div className="logout">
-          <a href="/login">
+          <link to="/login">
             <FiLogOut />
             <span className="logout" onClick={() => logout()}>
               Logout
             </span>
-          </a>
+          </link>
         </div>
       </Section>
       <ResponsiveNav state={navbarState} className={navbarState ? "show" : ""}>
@@ -142,55 +143,55 @@ export default function Sidebar() {
               className={currentLink === 1 ? "active" : "none"}
               onClick={() => setCurrentLink(1)}
             >
-              <a href="/">
+              <link to="/">
                 <MdSpaceDashboard />
                 <span> Dashboard</span>
-              </a>
+              </link>
             </li>
             <li
               className={currentLink === 2 ? "active" : "none"}
               onClick={() => setCurrentLink(2)}
             >
-              <a href="/">
+              <link to="/">
                 <RiDashboard2Fill />
                 <span> Riders</span>
-              </a>
+              </link>
             </li>
             <li
               className={currentLink === 3 ? "active" : "none"}
               onClick={() => setCurrentLink(3)}
             >
-              <a href="/">
+              <link to="/">
                 <FaAddressCard />
                 <span> Payment Details</span>
-              </a>
+              </link>
             </li>
             <li
               className={currentLink === 4 ? "active" : "none"}
               onClick={() => setCurrentLink(4)}
             >
-              <a href="/">
+              <link to="/">
                 <GiTwirlCenter />
                 <span> Learning Center</span>
-              </a>
+              </link>
             </li>
             <li
               className={currentLink === 5 ? "active" : "none"}
               onClick={() => setCurrentLink(5)}
             >
-              <a href="/">
+              <link to="/">
                 <BsFillChatTextFill />
                 <span> FAQs</span>
-              </a>
+              </link>
             </li>
             <li
               className={currentLink === 6 ? "active" : "none"}
               onClick={() => setCurrentLink(6)}
             >
-              <a href="/">
+              <link to="/">
                 <IoSettings />
                 <span> Settings</span>
-              </a>
+              </link>
             </li>
           </ul>
         </div>
