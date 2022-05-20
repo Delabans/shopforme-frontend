@@ -37,7 +37,7 @@ const Signup = () => {
       body: newUser,
     });
 
-    localStorage.setItem("token", data.token);
+    // localStorage.setItem("token", data.token);
     if (newUser) {
       console.log(newUser);
       navigate("/signin");
